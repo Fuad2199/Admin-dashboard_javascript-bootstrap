@@ -28,6 +28,8 @@
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -184,7 +186,7 @@
                                 <h6 class="mb-0">Worldwide</h6>
                                 <a href="">Show All</a>
                             </div>
-                            <canvas id="worldwide-sales"></canvas>
+                            <canvas id="myChart"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
@@ -193,13 +195,26 @@
                                 <h6 class="mb-0">Sales & Revenue</h6>
                                 <a href="">Show All</a>
                             </div>
-                            <canvas id="salse-revenue"></canvas>
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Recent Salse</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div class="table-responsive">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Sales Chart End -->
-            <script src="./script.js"></script>
+            <script src="./charts.js"></script>
+            
+
 </body>
 
 </html>
