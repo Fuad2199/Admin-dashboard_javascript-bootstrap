@@ -20,22 +20,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js">
-        
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg">
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="./style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jscharting.com/latest/jscharting.js"></script>
 </head>
 
 <body>
     <div class="container-fluid position-relative bg-white d-flex p-0">
         <!-- sidebar short -->
-        <div class="sidebar pe-4 pb-3">
+        <section class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="" class="navbar-brand">
                     <h3 class="text-primary">
@@ -80,10 +81,10 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        </section>
         <!-- sidebar end -->
         <!-- navbar start -->
-        <div class="content">
+        <section class="content">
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
                 <a href="" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa-solid fa-hashtag"></i></h2>
@@ -130,6 +131,7 @@
             </nav>
             <!-- navbar end -->
 
+            <!-- Sale & Revenu Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
 
@@ -178,7 +180,7 @@
 
 
             <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
+            <section class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
@@ -198,22 +200,160 @@
                             <canvas id="line-chart"></canvas>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-xl-6">
+
+                    <div class="container-fluid pt-4 px-4">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Recent Salse</h6>
                                 <a href="">Show All</a>
                             </div>
                             <div class="table-responsive">
-                                
+                                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                                    <thead>
+                                        <tr class="text-dark">
+                                            <th scope="col"><input type="checkbox"></th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Invoice</th>
+                                            <th scope="col">Customer</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>01 Jab 2045</td>
+                                            <td>INV-01582</td>
+                                            <td>John Doe</td>
+                                            <td>$1354</td>
+                                            <td>Paid</td>
+                                            <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>01 Jab 2045</td>
+                                            <td>INV-01582</td>
+                                            <td>John Doe</td>
+                                            <td>$1354</td>
+                                            <td>Paid</td>
+                                            <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>01 Jab 2045</td>
+                                            <td>INV-01582</td>
+                                            <td>John Doe</td>
+                                            <td>$1354</td>
+                                            <td>Paid</td>
+                                            <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>01 Jab 2045</td>
+                                            <td>INV-01582</td>
+                                            <td>John Doe</td>
+                                            <td>$1354</td>
+                                            <td>Paid</td>
+                                            <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="form-check-input"></td>
+                                            <td>01 Jab 2045</td>
+                                            <td>INV-01582</td>
+                                            <td>John Doe</td>
+                                            <td>$1354</td>
+                                            <td>Paid</td>
+                                            <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- Recent sales end -->
+
+                <!-- Widgets start -->
+                <section class="container-fluid pt-4 px-4">
+                    <div class="row g-4">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="h-100 bg-light rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="mb-0">Messanger</h6>
+                                    <a href="">Show All</a>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom py-3">
+                                    <img class="img rounded-circle flex-shrink-0" src="./assets/user.jpg" alt="">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-0">Jhon Doe</h6>
+                                            <small>15 minutes age</small>
+                                        </div>
+                                        <span>Short message goes here</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom py-3">
+                                    <img class="img rounded-circle flex-shrink-0" src="./assets/user.jpg" alt="">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-0">Jhon Doe</h6>
+                                            <small>15 minutes age</small>
+                                        </div>
+                                        <span>Short message goes here</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom py-3">
+                                    <img class="img rounded-circle flex-shrink-0" src="./assets/user.jpg" alt="">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-0">Jhon Doe</h6>
+                                            <small>15 minutes age</small>
+                                        </div>
+                                        <span>Short message goes here</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom py-3">
+                                    <img class="img rounded-circle flex-shrink-0" src="./assets/user.jpg" alt="">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-0">Jhon Doe</h6>
+                                            <small>15 minutes age</small>
+                                        </div>
+                                        <span>Short message goes here</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="h-100 bg-light rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0">Calendar</h6>
+                                    <a href="">Show All</a>
+                                </div>
+                                <div>
+                                    <div id="dateLabel"></div>
+                                    <div id="chartDiv"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="h-100 bg-light rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0">To Do List</h6>
+                                    <a href="">Show All</a>
+                                </div>
+                                <div id="d-flex mb-2">
+                                    <input type="text" placeholder="Enter Text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
             <!-- Sales Chart End -->
             <script src="./charts.js"></script>
-            
+
 
 </body>
 
