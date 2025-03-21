@@ -9,5 +9,5 @@ In this project I have been created simple `Admin Dashboard` for using and learn
 ### How to Run the Project
 
 Clikc `Go Live` in Visual Studio Code
-<hr>
+<br>
 Check website responsive with `inspect`
