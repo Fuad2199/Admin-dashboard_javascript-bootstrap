@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-This project is a simple Admin Dashboard page built with html, css, javascript, `chart.js`.
+This project is a simple Admin Dashboard page I have been built with html, css, javascript, `chart.js`.
 
 ## What is the purpose of the project?
 
